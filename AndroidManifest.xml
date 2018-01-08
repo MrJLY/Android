@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abc.wcd"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tubiao"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Second_Activity"
+            android:label="微长大" >
+        </activity>
+        <activity
+            android:name=".Activityone"
+            android:label="@string/title_activity_activityone" >
+        </activity>
+        <activity
+            android:name=".Activitythree"
+            android:label="@string/title_activity_activitythree" >
+        </activity>
+        <activity
+            android:name=".Activityfour"
+            android:label="@string/title_activity_activityfour" >
+        </activity>
+        <activity
+            android:name=".Activityfive"
+            android:label="@string/title_activity_activityfive" >
+        </activity>
+    </application>
+
+</manifest>

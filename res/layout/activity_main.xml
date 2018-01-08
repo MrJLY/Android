@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abc.wcd.MainActivity" >
+
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img1"
+        />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="微长大"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textview3"
+        android:layout_below="@+id/textview1"
+        android:layout_marginTop="34dp"
+        android:text="学号" />
+    
+    
+       <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview2"
+        android:layout_alignBottom="@+id/textview2"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/textview2"
+        android:ems="10"
+        android:hint="请输入学号"
+        android:inputType="textPersonName"/>
+   
+       <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="54dp"
+        android:text="密码" />
+       
+       <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview3"
+        android:layout_alignBottom="@+id/textview3"
+        android:layout_alignLeft="@+id/editText1"
+        android:ems="10"
+        android:hint="请输入校园网密码"
+        android:inputType="textPassword" />
+
+       <Button
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/textview1"
+        android:layout_below="@+id/editText2"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="33dp"
+        android:text="登录"
+        android:textColor="#ffffff" 
+        android:background="@drawable/buttons"
+        />
+  
+</RelativeLayout>
